@@ -1,0 +1,5 @@
+{
+  "exec": "npm start",
+  "watch": ["db/*","views/*","routes/*", "public/*"],
+  "ext": "js, html, css, json"
+}

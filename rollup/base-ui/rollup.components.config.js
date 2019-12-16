@@ -9,14 +9,10 @@ import { writeFileSync } from 'fs' // 写文件
 
 module.exports = {
   input: 'src/Button/index.js', // 入口
-  output: [{
-    file: 'dist/button/index.umd.js', // 打包文件名
-    name: 'text',
-    format: 'umd', // 打包模块支持方案，可选 amd, cjs, es, iife, umd
-  }, {
-    file: 'dist/button/index.es.js',
+  output: {
+    file: 'dist/button/index.js',
     format: 'es'
-  }],
+  },
   plugins: [
     // css({output: 'dist/base-ui.css'}),
     css({ output(style) {

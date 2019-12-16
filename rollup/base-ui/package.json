@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "rollup -c --watch",
     "build": "rollup -c",
-    "example": "cd examples && npm run serve",
+    "build:components": "roolup -c rollup.components.config.js",
+    "dev:example": "cd examples && npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
